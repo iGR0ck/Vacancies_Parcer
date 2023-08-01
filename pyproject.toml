@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "vacansiesparcer"
+version = "0.1.0"
+description = ""
+authors = ["igorpetushkov <igor.igorevich08@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+certifi = "2023.5.7"
+charset-normalizer = "3.2.0"
+idna = "3.4"
+requests = "2.31.0"
+urllib3 = "2.0.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
