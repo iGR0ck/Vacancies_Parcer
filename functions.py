@@ -53,7 +53,7 @@ def user_interaction():
 
     print('Данные сохранены в соответствующие файлы')
 
-    user_answer = input('Желаете вывести список вакансий? (да\нет) :')
+    user_answer = input('Вывести список вакансий? (да\нет) :')
     if user_answer.lower() == 'да':
         user_count = int(input(f'С какой площадки вывести данные?\n'
                                f'1. {site_list_for_search[0]}\n'
@@ -81,7 +81,7 @@ def user_interaction():
     else:
         print('Неверный ввод')
 
-    user_answer = input('Желаете очистить файлы с вакансиями? (да\нет) : ')
+    user_answer = input('Очистить файлы с вакансиями? (да\нет) : ')
     if user_answer.lower() == 'да':
         with open("user_hh.json", "w") as f:
             pass
