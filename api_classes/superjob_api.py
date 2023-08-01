@@ -1,5 +1,5 @@
 import requests
-from api.abstract_api import AbstractAPI
+from api_classes.abstract_api_class import AbstractAPI
 import os
 
 
