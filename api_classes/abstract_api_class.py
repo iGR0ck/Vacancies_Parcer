@@ -7,5 +7,5 @@ class AbstractAPI(ABC):
     """
 
     @abstractmethod
-    def get_vacancies(self, keyword):
+    def get_vacancies(self, keyword: str):
         pass

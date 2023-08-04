@@ -9,7 +9,7 @@ class SuperJobAPI(AbstractAPI):
     """
     url = 'https://api.superjob.ru/2.0/vacancies/'
 
-    def get_vacancies(self, keyword, count=10):
+    def get_vacancies(self, keyword: str, count=10) -> list:
         api_token_sj = os.getenv('Superjob_API')
         headers = {
             "X-Api-App-Id": api_token_sj

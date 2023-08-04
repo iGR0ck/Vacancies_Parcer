@@ -9,7 +9,7 @@ class HeadHunterAPI(AbstractAPI):
 
     url = 'https://api.hh.ru/vacancies'
 
-    def get_vacancies(self, keyword, per_page=10):
+    def get_vacancies(self, keyword: str, per_page=10) -> list:
 
         params = {
             'text': keyword,
